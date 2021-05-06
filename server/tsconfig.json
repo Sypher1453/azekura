@@ -1,0 +1,21 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "skipLibCheck": true,
+    // "lib": [
+    //   "es2017",
+    //   "dom"
+    // ],
+    "declaration": false,
+    "sourceMap": true,
+    "outDir": "../dist/server",
+    "moduleResolution": "node",
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  }
+}
+

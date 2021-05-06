@@ -1,0 +1,12 @@
+<h1>Sites</h1>
+<table border="1">
+  <tr><th>Title</th><th>URL</th><th>id</th><th>type</th></tr>
+  <tr *ngFor="let site of sites">
+    <td>{{site.title}}</td>
+    <td *ngIf="!site.name.indexOf('http')"><a href={{site.name}}>{{site.name}}</a></td>
+    <td *ngIf="site.name.indexOf('http')">{{site.name}}</td>
+    <td>{{site.id}}</td>
+    <td>{{site.type}}</td>
+
+  </tr>
+</table>
